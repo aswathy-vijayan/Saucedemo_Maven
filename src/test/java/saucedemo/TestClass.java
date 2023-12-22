@@ -1,5 +1,4 @@
 package saucedemo;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,7 +38,8 @@ public class TestClass extends TestBase {
 		String actualError = obj.checkLoginStatus();
 		Assert.assertEquals(actualError, AutomationConstants.expError);
 	}
-
+	
+	// test case using valid credentials
 	@Test
 	public void testCase4() {
 		obj = new LoginPage(driver);
